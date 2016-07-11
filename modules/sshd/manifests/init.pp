@@ -9,7 +9,7 @@ class sshd{
 		owner => root,
 		group => root,
 		#package must be installed before configuration file
-		require => Package[openssh-server"],
+		require => Package["openssh-server"],
 
 	}
 
