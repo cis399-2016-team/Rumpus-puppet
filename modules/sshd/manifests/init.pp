@@ -19,7 +19,7 @@ class sshd{
 		#restart service if it is not running
 		ensure => running,
 		#package and config file must be present for service
-		require => [ Package["openssh"],
+		require => [ Package["openssh-server"],
 				File["/etc/ssh/sshd_config"]  ],
 		
 	}
