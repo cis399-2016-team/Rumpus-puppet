@@ -3,7 +3,7 @@ class sshd{
 		"openssh-server": ensure => installed;
 	}
 
-	file{ "/modules/ssh/files/sshd_config": 
+	file{ "/etc/ssh/sshd_config": 
 		source => "puppet:///modules/ssh/files/sshd_config",
 		mode => 644,
 		owner => root,
