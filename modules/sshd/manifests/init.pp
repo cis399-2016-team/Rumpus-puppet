@@ -20,7 +20,7 @@ class sshd{
 		ensure => running,
 		#package and config file must be present for service
 		require => [ Package["openssh-server"],
-				File["/etc/ssh/sshd_config"]  ],
+				File["/etc/ssh/sshd_config"],  ],
 		
 	}
 
