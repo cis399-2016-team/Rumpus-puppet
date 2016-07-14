@@ -4,8 +4,12 @@ class sshd{
 	}
 
 	file{ "/etc/ssh/sshd_config": 
+<<<<<<< HEAD
 		source => "puppet:///modules/sshd/sshd_config",
 		notify => Service['sshd'],
+=======
+		source => "puppet:///modules/ssh/files/sshd_config",
+>>>>>>> b606a93ece851a538b37c6b5fbb5372600aab0a2
 		mode => 644,
 		owner => root,
 		group => root,
