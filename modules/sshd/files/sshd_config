@@ -49,8 +49,7 @@ PermitEmptyPasswords no
 ChallengeResponseAuthentication no
 
 # Change to no to disable tunnelled clear text passwords
-# implementing a change so the puppet will restart
-PasswordAuthentication no
+#PasswordAuthentication yes
 
 # Kerberos options
 #KerberosAuthentication no
