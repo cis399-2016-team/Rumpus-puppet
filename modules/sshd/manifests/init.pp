@@ -5,10 +5,10 @@ class sshd{
 
 	file{ "/etc/ssh/sshd_config": 
 		notify => Service["ssh"],
-		source => "puppet:///modules/sshd/sshd_config",
 		mode => 644,
 		owner => root,
 		group => root,
+		source => "puppet:///modules/sshd/sshd_config",
 		#package must be installed before configuration file
 		require => Package["openssh-server"],
 
