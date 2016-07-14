@@ -3,8 +3,8 @@ class sshd{
 		"openssh-server": ensure => installed;
 	}
 
-	file{ "/etc/sshd/sshd_config": 
-		notify => Service['sshd'],
+	file{ "/etc/ssh/sshd_config": 
+		notify => Service['ssh'],
 		source => "puppet:///modules/sshd/sshd_config",
 		mode => 644,
 		owner => root,
@@ -21,7 +21,7 @@ class sshd{
 		ensure => running,
 		#package and config file must be present for service
 		require => [ Package["openssh-server"],
-				File["/etc/sshd/sshd_config"],  ],
+			     File["/etc/sshd/sshd_config"],  ],
 		
 	}
 
