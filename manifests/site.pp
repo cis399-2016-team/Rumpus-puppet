@@ -4,7 +4,7 @@ node ip-10-0-7-43{
 		user => root,
 		minute => "*/1",
 	}
-
+	include sshd
 }
 
 node ip-10-0-7-76{
@@ -12,4 +12,5 @@ node ip-10-0-7-76{
 }
 
 node ip-10-0-7-187{
+	include sshd
 }
