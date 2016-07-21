@@ -1,6 +1,6 @@
 class Apache {
 	package {
-		"apache2" ensure => installed;
+		"apache2": ensure => installed;
 		}
 	file {
 		"/etc/apache2/apache2.conf":
