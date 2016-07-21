@@ -5,8 +5,7 @@ class Apache {
 	file {
 		"/etc/apache2/apache2.conf":
 		source  =>  [
-			"puppet:///modules/apache2/$hostname/apache2.conf",
-			"puppet:///modules/apache2/apache2.conf",
+			"puppet:///modules/Apache/apache2.conf",
 		],
 		mode => 444,
 		owner => root,
