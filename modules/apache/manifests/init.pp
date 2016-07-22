@@ -3,7 +3,7 @@ class apache{
 		"apache2": ensure => installed;
 		}
 	file{ "/etc/apache2/apache2.conf":
-		source  =>  "puppet:///modules/Apache/apache2.conf",
+		source  =>  "puppet:///modules/apache/apache2.conf",
 		mode => 644,
 		owner => root,
 		group => root,
