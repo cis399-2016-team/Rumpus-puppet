@@ -1,5 +1,8 @@
 class users {
-
+	User{
+		managehome => true,
+		shell => "/bin/bash"
+	}
 	user { "stevev":
 		home => "/home/stevev",
 		managehome => true,
