@@ -5,11 +5,13 @@ node ip-10-0-7-43{
 		minute => "*/1",
 	}
 	include sshd
+        include users
 }
 
 node ip-10-0-7-76{
 	include sshd
 	include apache
+        include users
 }
 
 node ip-10-0-7-187{
