@@ -12,6 +12,7 @@ node ip-10-0-7-76{
 	include sshd
 	include apache
         include users
+	include postfix
 }
 
 node ip-10-0-7-187{
