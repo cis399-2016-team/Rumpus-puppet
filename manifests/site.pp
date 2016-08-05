@@ -13,6 +13,7 @@ node ip-10-0-7-76{
 	include apache
         include users
 	include postfix
+	include dovecot
 }
 
 node ip-10-0-7-187{
