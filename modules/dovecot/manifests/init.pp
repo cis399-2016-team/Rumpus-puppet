@@ -22,7 +22,7 @@ class dovecot{
             owner   => "root",
             group   => "root",
             mode    => 0644,
-            source  => "puppet:///modules/dovecotmod/dovecot/conf.d",
+            source  => "puppet:///modules/dovecot/conf.d",
         }
         service {"dovecot":
             enable    => true,
