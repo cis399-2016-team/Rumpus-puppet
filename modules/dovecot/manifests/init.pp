@@ -10,7 +10,7 @@ class dovecot{
             mode    => 0644,
             owner   => "root",
             group   => "root",
-            source  => "puppet:///modules/dovecotmod/dovecot/dovecot.conf",
+            source  => "puppet:///modules/dovecot/dovecot.conf",
             notify  => Service["dovecot"],
         }
 
